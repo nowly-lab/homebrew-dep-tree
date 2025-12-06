@@ -5,21 +5,21 @@
 class NowlyTree < Formula
   desc "Nowly Lab's Homebrew distribution of dep-tree."
   homepage "https://github.com/nowly-lab/dep-tree"
-  version "0.23.11"
+  version "0.23.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nowly-lab/dep-tree/releases/download/v0.23.11/nowly-tree_darwin_amd64.tar.gz"
-      sha256 "205ea2dc8e65cde42374c18c027e32b59dd4c5fe100f0b8814c85e015ae2c848"
+      url "https://github.com/nowly-lab/dep-tree/releases/download/v0.23.12/nowly-tree_darwin_amd64.tar.gz"
+      sha256 "f1c867d069697daaec237463435ebd71d89747ed694d86e617d62159773f647f"
 
       def install
         bin.install "nowly-tree"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nowly-lab/dep-tree/releases/download/v0.23.11/nowly-tree_darwin_arm64.tar.gz"
-      sha256 "666e0b1dcd7f6ab06596bbea463a95082dfb26c280a5bdb33a634758007d4a20"
+      url "https://github.com/nowly-lab/dep-tree/releases/download/v0.23.12/nowly-tree_darwin_arm64.tar.gz"
+      sha256 "0cca5a25c7bc95e50da54317d1f1fd0e0c9db831b9a28db25a0c20bcbd97f58a"
 
       def install
         bin.install "nowly-tree"
@@ -29,15 +29,15 @@ class NowlyTree < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nowly-lab/dep-tree/releases/download/v0.23.11/nowly-tree_linux_amd64.tar.gz"
-      sha256 "b93d367afdbd90ba9428655cf0e0285b8e03b1774b4c8c31b03aa402ee0fbe18"
+      url "https://github.com/nowly-lab/dep-tree/releases/download/v0.23.12/nowly-tree_linux_amd64.tar.gz"
+      sha256 "e8a45b89e118ebd4c8e49aeaab9f23e33621d9cbc2aca087023d36b19a5c0a9f"
       def install
         bin.install "nowly-tree"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nowly-lab/dep-tree/releases/download/v0.23.11/nowly-tree_linux_arm64.tar.gz"
-      sha256 "ab0f372a03d22021efe2f3bb7ae5d473b31c36f788e0ff253477b7478f7bfa8c"
+      url "https://github.com/nowly-lab/dep-tree/releases/download/v0.23.12/nowly-tree_linux_arm64.tar.gz"
+      sha256 "afcb14397eacecbe78adfbf9eac3afc20d79cc44c91ad734d2b2a1a7d9bfe485"
       def install
         bin.install "nowly-tree"
       end
